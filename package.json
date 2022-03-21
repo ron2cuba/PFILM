@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "name": "pfilm_lenouvel_ronan",
+  "description": "Jennifer Edwards est l'organisatrice du festival des Films de Plein Air. Elle ambitionne de sélectionner et de projeter des films d'auteur en plein air du 5 au 8 août au parc Monceau à Paris.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node-sass --watch maquettes -o maquettes/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ron2cuba/PFILM.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ron2cuba/PFILM/issues"
+  },
+  "homepage": "https://github.com/ron2cuba/PFILM#readme"
+}
