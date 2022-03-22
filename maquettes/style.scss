@@ -166,41 +166,30 @@ section {
         .grid-1, .grid-2 {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            justify-items: center;
             .card{
-                border: 1px solid $fa;
+                margin: 0.5rem;
                 box-shadow: $shadow;
-                margin: 0.2rem;
-                padding: 0.2rem;
+                border-radius: .3rem;
+                max-width: 30rem;
                 .card-img{
                     img{
-                        width:100%;
+                        border-top-left-radius: calc(0.3rem - 1px);
+                        border-top-right-radius: calc(0.3rem - 1px);
+                        width: 100%;
                         height: 20rem;
                     }
                 }
                 .card-text{
-                    padding: 0.5rem;
+                    flex: 1 1 auto;
+                    padding: 1.5rem;
                     .text{
                         font-size: 1.25rem;
                         text-align: justify;
                     }
                 }
             }
-            // .calendar, .film, .user, .insta{
-            //     background-size: cover;
-            //     box-shadow: $shadow;
-            //     margin: 1rem;
-            //     padding: 0.5rem;
-            //     border-radius: .25rem;
-            //     opacity: .75;
-            //     background-repeat: no-repeat;
-            //     text-shadow: 1px 1px 2px $black;
-            //     color: $link;
-            //     p{
-            //         margin-left: .5rem;
-            //         font-size: 1rem;
-            //         text-align: justify;
-            //     }
-            // }
         }
 
     }
