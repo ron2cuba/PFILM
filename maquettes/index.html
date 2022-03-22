@@ -5,9 +5,128 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.1.0-web/css/all.min.css">
+    <script src="./js/app.js" defer></script>
     <title>Accueil</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <ul>
+                <li class="current">Accueil</li>
+                <li><a href="">Actus</a></li>
+                <li><a href="">Programme</a></li>
+                <li><a href="">Réservation</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">À Propos</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <div class="wrapper-header">
+            <div class="logo-wrapper"></div>
+            <div class="hero-wrapper">
+                <h1 class="h1">Festival des films plein air</h1>
+                <p class="intro">Du 05 au 08 août Parc Monceau Paris</p>
+            </div>
+        </div><!-- /wrapper-header -->
+    </header>
+    <section>
+        <h2>Coups de cœur</h2>
+        <div class="carousel">
+            <i class="fa-solid fa-arrow-left-long"></i>
+            <!-- rempli provisoirement avec un gif animé -->
+            <img src="./img/carousel.gif" alt="carousel animé">
+            <i class="fa-solid fa-arrow-right-long"></i>
+        </div>
+        <div class="featured">
+            <div class="discover">Des réalisateurs à (re)décourvir</div>
+            <div class="grid-1">
+                <div class="card">
+                    <div class="card-img calendar">
+                        <img src="./img/ticket.jpg" alt="ticket de cinema">
+                    </div>
+                    <div class="card-text">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio eveniet fugit ullam, tempora, aut tempore minima quo deleniti quod consequatur ex sequi? Recusandae reprehenderit consectetur tempore mollitia quisquam delectus vitae. Incidunt consequuntur praesentium expedita culpa iure vel mollitia necessitatibus earum eveniet! Optio qui adipisci odio? Error corrupti officiis illum.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img film">
+                        <img src="./img/popcorn.jpg" alt="popcorn au cinema">
+                    </div>
+                    <div class="card-text">
+                        <i class="fa-solid fa-film"></i>
+                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio eveniet fugit ullam, tempora, aut tempore minima quo deleniti quod consequatur ex sequi? Recusandae reprehenderit consectetur tempore mollitia quisquam delectus vitae. Incidunt consequuntur praesentium expedita culpa iure vel mollitia necessitatibus earum eveniet! Optio qui adipisci odio? Error corrupti officiis illum.</p>
+                    </div>
+                </div>
+            </div><!-- /grid-1 -->
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-img user">
+                        <img src="./img/clap.jpg" alt="clap de scene au cinema">
+                    </div>
+                    <div class="card-text">
+                        <i class="fa-solid fa-user"></i>
+                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio eveniet fugit ullam, tempora, aut tempore minima quo deleniti quod consequatur ex sequi? Recusandae reprehenderit consectetur tempore mollitia quisquam delectus vitae. Incidunt consequuntur praesentium expedita culpa iure vel mollitia necessitatibus earum eveniet! Optio qui adipisci odio? Error corrupti officiis illum.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img insta">
+                        <img src="./img/camera.jpg" alt="">
+                    </div>
+                    <div class="card-text">
+                        <i class="fa-brands fa-instagram"></i>
+                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio eveniet fugit ullam, tempora, aut tempore minima quo deleniti quod consequatur ex sequi? Recusandae reprehenderit consectetur tempore mollitia quisquam delectus vitae. Incidunt consequuntur praesentium expedita culpa iure vel mollitia necessitatibus earum eveniet! Optio qui adipisci odio? Error corrupti officiis illum.</p>
+                    </div>
+                </div>
+            </div><!-- /grid-2 -->
+        </div>
+        <h2 class="h2">La vie est long fleuve tranquille</h2>
+        <video width=540 controls autoplay>
+            <source src="https://assets.codepen.io/6093409/river.mp4" type="video/mp4">
+            Cette vidéo ne peut être affichée sur votre navigateur Internet.
+        </video>
+    </section>
+    <div class="form">
+        <form>
+            Effectuer une réservation rapide
+            <div class="first-column">
+                <div class="datefield">
+                    <input type="datetime-local" id="date-picker">
+                </div>
+                <div class="selected-film">
+                    <select name="films" id="films">
+                        <option value="VOID">Enter the void</option>
+                        <option value="Portrait">Portrait de la jeune fille en feu</option>
+                        <option value="Elle">Elle</option>
+                        <option value="Paranoid">Paranoid Park</option>
+                    </select>
+                </div>
+            </div><!-- /first-column -->
+            <div class="second-column">
+                <input type="checkbox" name="one">
+                <label for="one">1 pers.</label>
+                <input type="checkbox" name="two">
+                <label for="two">2 pers.</label>
+                <input type="checkbox" name="three">
+                <label for="three">3 pers.</label>
+                <input type="checkbox" name="four" id="void">
+                <label for="four">4 pers.</label>
+            </div><!-- /second-column -->
+            <div class="name">
+                <input type="text" name="name" id="name" value="Nom de la réservation">
+            </div>
+            <div class="third-column">
+                <input type="checkbox" name="pmr" id="pmr">
+                <label for="pmr" class="switch">Accès PMR</label>
+                <i class="fa-brands fa-accessible-icon"></i>
+            </div><!-- /third-column -->
+            <div class="fourth-column">
+                <div class="infos">
+                    Pour une meilleure organisation les réservations supérieures à 4 personnes nécessites de paser directement par l'association et le formulaire de contact.
+                </div>
+            </div><!-- /fourth-column -->
+        </form>
+    </div>
 </body>
 </html>
