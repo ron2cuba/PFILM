@@ -34,4 +34,5 @@ Explication du `package.json`:
 "watch": "node-sass --watch maquettes -o maquettes/css"
 ```
 
-Quand on tape la commande `npm run watch`, "node va surveiller" le dosier maquettes, prendre tous les fichiers avec l'extension `.scss`, les compiler puis les envoyer dans `maquettes/css`
+Quand on tape la commande `npm run watch`, "node va surveiller" le dosier maquettes, prendre tous les fichiers avec l'extension `.scss`, les compiler puis les envoyer dans `style.css
+`
