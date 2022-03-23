@@ -61,19 +61,7 @@
             padding: .5rem .5rem;
             height: 100%;
             text-align: justify;
-            vertical-align: middle;
-            button{
-                display: block;
-                margin: 1rem auto;
-                padding: .5rem;
-                border-radius: .2rem ;
-                background-color: $jaune-opacifie;
-                color: $black;
-                box-shadow: 2px 1px 3px $grey;
-                &:hover{
-                    box-shadow: none;
-                }
-            }    
+            vertical-align: middle;   
         }
         &:last-child{ // bidouille pour le centrage vertical
             display: table;
