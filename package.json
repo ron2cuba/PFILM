@@ -9,7 +9,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "node-sass --watch maquettes -o maquettes"
+    "watch": "node-sass --watch maquettes/scss/ -o maquettes"
   },
   "repository": {
     "type": "git",

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../fontawesome-free-6.1.0-web/css/all.min.css">
+    <link rel="shortcut icon" href="../images cahier des charges/logo.png" type="image/x-icon">
     <script src="./js/app.js" defer></script>
     <title>Accueil</title>
 </head>
@@ -87,14 +88,16 @@
             Cette vidéo ne peut être affichée sur votre navigateur Internet.
         </video>
     </section>
-    <div class="form">
+    <div class="form-container">
+        <span>Réservation rapide</span>
         <form>
-            Effectuer une réservation rapide
-            <div class="first-column">
+            <div class="form-col">
                 <div class="datefield">
-                    <input type="datetime-local" id="date-picker">
+                    <label for="date">Date de la séance</label>
+                    <input type="datetime-local" name="date" id="date">
                 </div>
-                <div class="selected-film">
+                <div class="select-field">
+                    <label for="films">Film</label>
                     <select name="films" id="films">
                         <option value="VOID">Enter the void</option>
                         <option value="Portrait">Portrait de la jeune fille en feu</option>
@@ -102,31 +105,39 @@
                         <option value="Paranoid">Paranoid Park</option>
                     </select>
                 </div>
-            </div><!-- /first-column -->
-            <div class="second-column">
-                <input type="checkbox" name="one">
-                <label for="one">1 pers.</label>
-                <input type="checkbox" name="two">
-                <label for="two">2 pers.</label>
-                <input type="checkbox" name="three">
-                <label for="three">3 pers.</label>
-                <input type="checkbox" name="four" id="void">
-                <label for="four">4 pers.</label>
-            </div><!-- /second-column -->
-            <div class="name">
-                <input type="text" name="name" id="name" value="Nom de la réservation">
             </div>
-            <div class="third-column">
-                <input type="checkbox" name="pmr" id="pmr">
-                <label for="pmr" class="switch">Accès PMR</label>
-                <i class="fa-brands fa-accessible-icon"></i>
-            </div><!-- /third-column -->
-            <div class="fourth-column">
-                <div class="infos">
-                    Pour une meilleure organisation les réservations supérieures à 4 personnes nécessites de paser directement par l'association et le formulaire de contact.
+            <div class="form-col">
+                <div class="checkbox-field">
+                   <span> Nombre de personnes</span>
+                   <div class="col">
+                        <div class="field">
+                            <label for="person">1 pers.</label>
+                            <input type="checkbox" name="1-person" id="1-person">
+                        </div>
+                        <div class="field">
+                            <label for="person">2 pers.</label>
+                            <input type="checkbox" name="2-person" id="2-person">
+                        </div>
+                    </div>
+                   <div class="col">
+                        <div class="field">
+                            <label for="person">3 pers.</label>
+                            <input type="checkbox" name="3-person" id="3-person">
+                        </div>
+                        <div class="field">
+                            <label for="person">4 pers.</label>
+                            <input type="checkbox" name="4-person" id="4-person">
+                        </div>
+                   </div>
+                </div><!-- /checkbox-field -->
+            </div>
+            <div class="form-col">
+                <div class="announcement">
+                    Pour une meilleure organisation,  les réservations supérieures à 4 personnes nécessites de contacter directement l'association par le formulaire.
+                    <button class="btn-rapid-form" type="submit">Réserver</button>
                 </div>
-            </div><!-- /fourth-column -->
+            </div>
         </form>
-    </div>
+    </div><!-- /form -->
 </body>
 </html>

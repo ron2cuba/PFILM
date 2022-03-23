@@ -1,0 +1,83 @@
+/**
+ design du formulaire
+*/
+.form-container{
+    form {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    position: relative; //necessaire au placement de reservation rapide
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: $card-radius;
+    box-shadow: $shadow;
+    span{
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        font-size: .8rem;
+    }
+    .form-col{
+        position: relative;
+        margin: 2rem;
+        margin-top: 2rem;
+        label, input{
+            display: block;
+        }
+        .datefield, .select-field {
+            border: 1px solid $grey;
+            padding: .5rem ;
+            position: absolute;
+            width: 100%;
+        }
+        .select-field{
+            bottom: 0;
+            .field{
+                margin-top: rem;
+            }
+        }
+        .checkbox-field{
+            height: 100%;
+            border: 1px solid $grey;
+            text-align: left;
+            span {
+                padding: 0.2rem;
+                font-size: .6rem;
+                top: 1px;
+                left: 1px;
+            }
+            .col {
+                display: grid;  
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .field {
+                padding: 0.5rem;
+                margin-top: 1rem;
+                text-align: left;
+            }
+        }
+        .announcement{
+            border: 1px solid $grey;
+            padding: .5rem .5rem;
+            height: 100%;
+            text-align: justify;
+            vertical-align: middle;
+            button{
+                display: block;
+                margin: 1rem auto;
+                padding: .5rem;
+                border-radius: .2rem ;
+                background-color: $jaune-opacifie;
+                color: $black;
+                box-shadow: 2px 1px 3px $grey;
+                &:hover{
+                    box-shadow: none;
+                }
+            }    
+        }
+        &:last-child{ // bidouille pour le centrage vertical
+            display: table;
+        }
+    }
+
+}
