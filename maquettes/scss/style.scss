@@ -3,6 +3,7 @@
 @import "./partials/_form";
 @import "./partials/_maps-news";
 @import "./partials/_footer";
+@import "./partials/_mediaqueries";
 /** 
 Reset des styles par défaut suffira pour la maquette
 */
@@ -28,6 +29,12 @@ body {
     p{
         font-family: "Nickelodeon";
     }
+}
+.mobile, .mobile-button{
+     display: none;   
+}
+.hide {
+    display: none!important;
 }
 hr {
     background-color: #ffd500;
@@ -172,7 +179,9 @@ section {
         border-radius: 2rem;
         position: relative;
         background: url('./img/cinema.jpg');
-        background-size: contain;      
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom 35% center;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -222,10 +231,15 @@ section {
         font-style: italic;
         color: $mutedGrey;
     }
-    video{
-        margin: auto auto;
+    .video-container{
+        video{
+            width: 100%;
+        }
     }
 }
+/**
+    Breakpoint homepage
+*/
 
 /**
 

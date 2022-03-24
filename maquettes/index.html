@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<!-- 
+    /!\ -------- Important A lire -------- /!\
+
+        Ceci est une  maquettes d'apperçu, non définitve.
+        Les marges et les positions manquent de précision (mediaqueries),
+        Tout comme certains éléments sont faux (ex:carousel)
+
+    /!\ -------- Important A lire -------- /!\
+-->
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -7,12 +16,26 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../fontawesome-free-6.1.0-web/css/all.min.css">
     <link rel="shortcut icon" href="../images cahier des charges/logo.png" type="image/x-icon">
-    <script src="./js/app.js" defer></script>
+    <script src="./js/app.js"></script>
     <title>Accueil</title>
 </head>
 <body>
     <header>
-        <nav>
+        <div class="mobile-button">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+            <div class="mobile hide">            
+                <ul>
+                    <li class="current">Accueil</li>
+                    <li><a href="">Actus</a></li>
+                    <li><a href="">Programme</a></li>
+                    <li><a href="">Réservation</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">À Propos</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="desktop">
             <ul>
                 <li class="current">Accueil</li>
                 <li><a href="">Actus</a></li>
@@ -22,6 +45,7 @@
                 <li><a href="">À Propos</a></li>
             </ul>
         </nav>
+        
         <hr>
         <div class="wrapper-header">
             <div class="logo-wrapper"></div>
@@ -82,11 +106,13 @@
                 </div>
             </div><!-- /grid-2 -->
         </div>
-        <h2 class="h2">La vie est long fleuve tranquille</h2>
-        <video width=540 controls autoplay>
-            <source src="https://assets.codepen.io/6093409/river.mp4" type="video/mp4">
-            Cette vidéo ne peut être affichée sur votre navigateur Internet.
-        </video>
+        <div class="video-container">
+            <h2 class="h2">La vie est long fleuve tranquille</h2>
+            <video width=540 controls autoplay>
+                <source src="https://assets.codepen.io/6093409/river.mp4" type="video/mp4">
+                Cette vidéo ne peut être affichée sur votre navigateur Internet.
+            </video>
+        </div>
     </section>
     <div class="form-container">
         <span>Réservation rapide</span>
@@ -143,6 +169,7 @@
         <div class="maps-container">
             <div class="card">
                 <div class="text-coordonates">
+                    <!-- pour la maquette la gestion de Google Maps se fait par iframe en prod la gestion sera par l'api pour évioter les blocages du client-->
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.8735531366524!2d2.3067663158279794!3d48.87968700716077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc%20Monceau!5e0!3m2!1sfr!2sfr!4v1648027513477!5m2!1sfr!2sfr" style="border:0; box-shadow: none;" allowfullscreen="" loading="lazy"></iframe>
                     <h2><i class="fas fa-map"></i>
                         S'y rendre</h2>
