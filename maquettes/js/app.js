@@ -6,14 +6,15 @@ document.addEventListener("DOMContentLoaded", () => {
     // hide close button
     closeButton.classList.add('hide');
     
-    document.addEventListener('click', handleMobileMenuOpening)
     /**
      * mobile menu opening management
      * @param {event} e click
      */
+    burgerButton.addEventListener('click', handleMobileMenuOpening);
     function handleMobileMenuOpening(e) {
         closeButton.classList.toggle('hide');
         burgerButton.classList.toggle('hide');
         mobileMenu.classList.toggle('hide');
+        closeButton.addEventListener('click', handleMobileMenuOpening);
     }
 });
