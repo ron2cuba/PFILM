@@ -29,28 +29,13 @@ h2.h2{
                 padding: 0.5rem;
             }
             button.read{
+                position: initial;// annule le absolute
                 width:30%;
-                color : $black;
-                border-radius: .2rem;
-                margin: 1rem auto;
-                box-shadow: $shadow;
-                transition: all ease 500ms;
-                border: 1px solid $black;
-                font-family: "Luxi-italic";
-                &:hover{
-                box-shadow: none;
-                }
-                background-color: $jaune;
             }
-                img{
-                    width: 100%;
-                    border-radius: .2rem;
-                }
+            img{
+                width: 100%;
+                border-radius: .2rem;
+            }
         }
-    }
-}
-@media (max-width: 780px){
-    .grid{
-        grid-template-columns: repeat(2, 1fr);
     }
 }
