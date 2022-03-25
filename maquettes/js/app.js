@@ -1,16 +1,19 @@
+// when DOM is completly loaded
 document.addEventListener("DOMContentLoaded", () => {
-    // variables
-    let closeButton = document.querySelector('.fa-xmark');
-    let burgerButton = document.querySelector('.fa-bars');
-    let mobileMenu = document.querySelector('.mobile');
+    // variables declarations
+    let closeButton = document.querySelector('.fa-xmark');// cross
+    let burgerButton = document.querySelector('.fa-bars');// burger
+    let mobileMenu = document.querySelector('.mobile');// menu butons container
     // hide close button
     closeButton.classList.add('hide');
     
+    // eventlistener on burger menu button
+    burgerButton.addEventListener('click', handleMobileMenuOpening);
     /**
      * mobile menu opening management
      * @param {event} e click
      */
-    burgerButton.addEventListener('click', handleMobileMenuOpening);
+    
     function handleMobileMenuOpening(e) {
         closeButton.classList.toggle('hide');
         burgerButton.classList.toggle('hide');
