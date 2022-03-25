@@ -22,7 +22,7 @@
         label, input{
             display: block;
         }
-        .datefield, .select-field {
+        .datefield, .select-field, .name-field, .firstname-field, .email-field, .subject-field, .textarea-field{
             border: 1px solid $grey;
             padding: .5rem ;
             position: absolute;
@@ -49,7 +49,14 @@
                 padding: 0.5rem;
                 margin-top: 1rem;
                 text-align: left;
+                input#PMR {
+                    margin: 0 auto;
+                }
+                label[for=PMR]{
+                    text-align: center;
+                }
             }
+
         }
         .announcement{
             border: 1px solid $grey;
@@ -61,6 +68,37 @@
         &:last-child{ // bidouille pour le centrage vertical
             display: table;
         }
+        .text-input{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        .name-field, .firstname-field, .email-field, .textarea-field{
+            align-self:stretch;
+            align-items:center;
+        }
+        .name-field{
+            margin-bottom: 0.5rem;
+            top: 0;
+        }
+        .email-field{
+            bottom: 0;
+        }
+        .subject-field{
+            position: initial;
+        }
+        .textarea-field{
+            position: initial;
+            height: 10rem;
+        }
+        /* 
+            Annule le focus
+        */
+        :is(input, textarea):focus-visible{
+            outline: none;
+        }
     }
     .btn-rapid-form{
         display: block;
@@ -70,8 +108,10 @@
         background-color: $jaune-opacifie;
         color: $black;
         box-shadow: 2px 1px 3px $grey;
+        transition: all ease 500ms;
         &:hover{
             box-shadow: none;
+            color:$fa;
         }
     }
 
