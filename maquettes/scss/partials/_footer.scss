@@ -7,8 +7,21 @@ footer{
         display:flex;
         align-items: center;
         justify-content: space-around;
+        .col:first-child {
+            text-align: left;
+            margin-left: 1rem;
+        }
+        .col:nth-child(2) {
+            text-align: center;
+        }
+        .col:last-child {
+            text-align: right;
+            margin-right: 1rem;
+
+        }
         .col{
             margin-top: 2rem;
+            text-align: center;
             a{
                 text-decoration :none;
                 color: $link;

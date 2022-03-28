@@ -4,10 +4,10 @@
     </description>
     <view zooming-state="default:0" id="gantt-chart">
         <field id="tpd3" name="Nom" width="206" order="0"/>
-        <field id="tpd4" name="Date de début" width="91" order="1"/>
-        <field id="tpd5" name="Date de fin" width="83" order="2"/>
-        <field id="tpd6" name="Durée" width="37" order="3"/>
-        <field id="tpd8" name="Responsable" width="85" order="4"/>
+        <field id="tpd4" name="Date de début" width="54" order="1"/>
+        <field id="tpd5" name="Date de fin" width="30" order="2"/>
+        <field id="tpd6" name="Durée" width="30" order="3"/>
+        <field id="tpd8" name="Responsable" width="182" order="4"/>
         <option id="filter.completedTasks" value="false"/>
         <option id="color.recent">
             <![CDATA[#ff0000 #ffcccc #46f300 #9d25d1 #00ffff #ff3300 #66ff00 #0033ff #0000ff #33ff00]]>

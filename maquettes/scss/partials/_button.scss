@@ -20,3 +20,23 @@ button.read{
     color: $fa;
     text-shadow: $text-shadow;
 }
+.btn-rapid-form{
+    display: block;
+    margin: 1rem auto;
+    padding: .5rem;
+    border-radius: .2rem ;
+    background-color: $jaune-opacifie;
+    color: $black;
+    box-shadow: 2px 1px 3px $grey;
+    transition: all ease 500ms;
+    &:hover{
+        box-shadow: none;
+        color:$fa;
+    }
+}
+
+/**
+footer a centrer
+page lire plus / programme
+page lire plus / actus
+**/
