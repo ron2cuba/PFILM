@@ -44,6 +44,15 @@ body {
         font-size: 3rem;
         text-transform: uppercase;
     }
+    .h2, h2.h2, .discover{
+        text-shadow: $text-shadow;
+        font-family: 'Luxi-italic','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+        margin:2rem 0;
+        font-size: 2rem;
+        color: $mutedGrey;
+        border-bottom: 1px solid #ffd500;
+        text-align: center;
+    }
     p{
         font-family: "Nickelodeon";
     }
