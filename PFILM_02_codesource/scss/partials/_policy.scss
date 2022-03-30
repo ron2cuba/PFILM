@@ -1,0 +1,23 @@
+.wrapper-header{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .h1{
+        font-family: "Tabac";
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+}
+section.policy{
+    margin: 1rem;
+    p.text{
+        text-align: justify;
+    }
+    p:last-child{
+        margin-bottom: 2rem;
+    }
+}
+@media (max-width : 980px) {
+    
+}

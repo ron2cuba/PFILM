@@ -1,0 +1,74 @@
+// https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout/Grid_Template_Areas
+.film{
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);// nbr de col
+    grid-auto-rows: minmax(12.5rem, auto);// val min et max de chaque col
+    grid-template-areas:
+    "cover cover cover cover . text text text text text text ."
+    "cover cover cover cover . text text text text text text .";
+    img{
+        grid-area: cover; // place prise
+        width: 100%;
+        height: 100%;
+        box-shadow: $shadow;
+    }
+    .details{
+        position:relative;
+        grid-area: text; // place prise
+        align-items: center;
+        .text{
+            text-align: justify;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+        }
+        .center {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        button.read{
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}
+@media (max-width : 980px) {
+    .film {
+        grid-template-areas: none;
+        display: flex;
+        flex-direction: column;
+        img{
+            width: 10rem!important;
+        }
+    }
+    button.read{
+        grid-area: btn;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin-top: 20rem;
+        position: static!important;
+    }
+    
+}
+@media (max-width : 1200px) {
+    .film {
+        grid-template-areas: 
+        " cover cover cover cover cover cover   .   text  text text text ."
+        " cover cover cover cover cover cover   .   text  text text text .";
+        img {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+    button.read{
+        bottom: 100px;
+        right:0; 
+        grid-area: btn;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+}

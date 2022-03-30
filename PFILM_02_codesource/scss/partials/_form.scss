@@ -1,0 +1,214 @@
+section.form{
+    .form-container{
+        position: relative;
+        border-radius: .2rem;
+        margin: 1rem;
+        padding: 1rem;
+        box-shadow: $shadow;
+        form{
+            .card {
+                margin: 0 auto;
+            }
+            display: flex;
+            background-image: url('./img/contact.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            input, #message {
+                box-shadow: $shadow;
+                border-radius: .2rem;
+                margin: 1rem;
+            }
+            .col-1, .col-2, .col-3 {
+                width: 33%;
+            }
+            .col-1{
+                display: flex;
+                flex-flow: column wrap;
+                align-items: center;
+                justify-content: center;
+                input{
+                    min-width: 300px;
+                    padding: 0.5rem;
+                    height: 2rem;
+                }
+            }
+            .col-2{
+                height: 300px;
+                align-items: center;
+                display: flex;
+                textarea {
+                    resize: none;
+                    height: 13rem;
+                    min-width: 35rem;
+                    padding: 0.5rem;
+                }
+            }
+            .col-3{
+                margin: auto;
+                .btn-rapid-form{
+                    display: block;
+                    margin: 0 auto;
+                    background-color: $jaune;
+                }
+            }
+            
+        }
+        span{
+            position: absolute;
+            top: -1rem;
+            left: 0rem;
+            font-size: 0.7rem;
+            color: $fa;
+            text-shadow: $text-shadow; 
+        }
+        :focus{
+            outline: none;
+        }
+    }
+}
+.form-container{
+    margin: 1rem;
+    .card{
+        margin: 0 auto;
+    }
+    span{
+        position: absolute;
+        color: $fa;
+        text-shadow: $text-shadow;
+        margin-left: 0.5rem;
+        margin-top: 0.5rem;
+    }
+    position: relative;
+    :focus{
+        outline: none;
+    }
+    .form-col{
+        padding: 1.5rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .datefield, .select-field, .checkbox-field{
+            position: relative;
+            width: 375px;
+            border: 1px solid $grey;
+            margin-top: 1rem!important;
+            padding: 1rem;
+            border-radius: .2rem;
+            margin: 0 auto;
+        }
+        .checkbox-field{
+            span{
+                position: absolute;
+                top: -5px;
+                left: -2px;
+            }
+        }
+        .col{
+            margin: 0 auto;
+        }
+        .col{
+            text-align: center;
+        }
+        .field{
+            position: relative;
+        }
+        .announcement{
+            padding: 0 1rem;
+            text-align: justify;
+            color: $mutedGrey;
+            text-shadow: $text-shadow;
+            .btn-rapid-form{
+                position: absolute;
+                top:0;
+            }
+        }
+    }
+}
+@media (max-width: 1600px) {
+    section.form{
+        .form-container{
+            form{
+                .col-2{
+                    textarea {
+                        min-width: 20rem;
+                    }
+                }
+                .col-3{
+                    .btn-rapid-form{
+                        margin: auto;
+                    }
+                }
+    
+            }
+        }
+    }
+}
+
+@media (max-width: 1180px) {
+    section.form {
+        .form-container{
+            form{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                .col-2{
+                    textarea{
+                        min-width: 18.75rem;
+                    }
+                }
+                .col-3{
+                    margin: 0;
+                }
+            }
+        }
+
+    }
+}
+@media (max-width: 1179px) {
+    section.form {
+        .form-container{
+            margin: 0 auto;
+            margin-bottom: 1rem;
+            form{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                .col-2{
+                    textarea{
+                        min-width: 18.75rem;
+                    }
+                }
+                .col-3{
+                    margin: 0;
+                }
+            }
+        }
+
+    }
+}
+@media (max-width: 830px) {
+    .wrapper-header{
+        .hero-wrapper{
+            height:50rem;
+        }
+        margin-bottom: 2rem;
+    }
+    .form-container{
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        form{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            .col-2{
+                textarea{
+                    min-width: 18.75rem;
+                }
+            }
+            .col-3{
+                margin: 0;
+            }
+        }
+    }
+}

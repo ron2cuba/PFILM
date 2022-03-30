@@ -1,0 +1,39 @@
+.hero-wrapper{
+    margin-top: calc(2% - 1rem );
+    margin-right: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #a7a7a7;
+    width: calc(70% - 2rem);
+    height: 15rem;
+    background: url('./img/monceau.jpg');
+    opacity: .65;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: $shadow;
+    border-radius: 2rem;
+    padding: 0rem .5rem .5rem .5rem;
+    color: #fff;
+    .h1{
+        border-bottom: 1px solid $jaune;
+        /* offset-x | offset-y | blur-radius | color */
+        text-shadow: $text-shadow;
+    }
+    p{
+        justify-content: center;
+        align-items: center;
+        font-family: "Nickelodeon";
+        font-size: 3rem;
+        text-shadow: 1px 1px 2px $black;
+    }
+}
+@media (max-width : 680px){
+    .hero-wrapper{
+        height: 100vh;
+    }
+    .logo-wrapper{
+        min-height: 10rem;
+        min-width: 10rem;
+    }
+}

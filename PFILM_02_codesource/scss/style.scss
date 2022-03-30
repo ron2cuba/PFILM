@@ -1,0 +1,63 @@
+@import "./partials/_var";
+@import "./partials/_fonts";
+@import "./partials/_button";
+@import "./partials/_nav";
+@import "./partials/_home";
+@import "./partials/_hero-wrapper";
+@import "./partials/_carousel";
+@import "./partials/_card";
+@import "./partials/_form";
+@import "./partials/_purpose";
+@import "./partials/_maps-news";
+@import "./partials/_policy";
+@import "./partials/_masonry.scss";
+@import "./partials/_program.scss";
+@import "./partials/_footer";
+@import "./partials/_mediaqueries";
+/** 
+Reset des styles par défaut suffira pour la maquette
+*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none; 
+}
+/**
+classes générales
+*/
+body {
+    a{
+        color: $fa;
+        text-shadow: $text-shadow;
+        text-decoration: none;
+        &:visited{
+            color: $visited;
+        }
+    }
+    .h1, h3{
+        font-family: "Tabac";
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+    p{
+        font-family: "Nickelodeon";
+    }
+}
+.mobile, .mobile-button{
+     display: none;   
+}
+.hide {
+    display: none!important;
+}
+hr {
+    background-color: #ffd500;
+    border: none;
+    margin: 10px 12px;
+    border-bottom: 1px solid $jaune;
+    box-shadow: $shadow;
+}

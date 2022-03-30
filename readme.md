@@ -1,3 +1,30 @@
+### `/!\ Installation de node-sass`
+
+```sh
+npm i
+```
+Compilation avec la commande watch dans la CLI:
+```sh
+npm run watch
+```
+
+Explication du `package.json`:
+
+```json
+{
+    ...
+    "scripts":{
+        ...
+        "watch": "node-sass --watch maquettes -o maquettes/css"
+    }
+    ...
+}
+```
+
+Quand on tape la commande `npm run watch`, "node va surveiller" le dosier maquettes, prendre tous les fichiers avec l'extension `.scss`, les compiler puis les envoyer dans `./style.css`
+
+
+
 # Analysez les besoins de votre client pour son festival de films
 
 Jennifer Edwards est l'organisatrice du festival des Films de Plein Air. Elle ambitionne de sélectionner et de projeter des films d'auteur en plein air du 5 au 8 août au parc Monceau à Paris.
@@ -18,21 +45,3 @@ En tant que développeur, on vous demande de lister les fonctionnalités dont a 
 
 Vous devrez ensuite réaliser une première maquette de ce site correspondant à ses attentes, en utilisant uniquement HTML et CSS.
 
-## Installation de node-sass
-
-```sh
-npm i
-```
-Avec la commande watch:
-```sh
-npm run watch
-```
-
-Explication du `package.json`:
-
-```sh
-"watch": "node-sass --watch maquettes -o maquettes/css"
-```
-
-Quand on tape la commande `npm run watch`, "node va surveiller" le dosier maquettes, prendre tous les fichiers avec l'extension `.scss`, les compiler puis les envoyer dans `style.css
-`

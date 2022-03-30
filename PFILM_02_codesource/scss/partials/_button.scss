@@ -1,0 +1,41 @@
+button.read{
+    position: absolute;
+    padding: 0.5rem;
+    bottom: 2rem;
+    right: 2rem;
+    height: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    color : $black;
+    border-radius: .2rem;
+    margin: 1rem auto;
+    box-shadow: $shadow;
+    transition: all ease 500ms;
+    border: 1px solid $black;
+    font-family: "Luxi-italic";
+    &:hover{
+    box-shadow: none;
+    }
+    background-color: $jaune;
+    color: $fa;
+    text-shadow: $text-shadow;
+}
+.btn-rapid-form{
+    margin: 1rem auto;
+    padding: .5rem;
+    border-radius: .2rem ;
+    background-color: $jaune-opacifie;
+    color: $black;
+    box-shadow: 2px 1px 3px $grey;
+    transition: all ease 500ms;
+    &:hover{
+        box-shadow: none;
+        color:$fa;
+    }
+}
+
+/**
+footer a centrer
+page lire plus / programme
+page lire plus / actus
+**/

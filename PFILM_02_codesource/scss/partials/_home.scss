@@ -1,0 +1,47 @@
+section {
+    margin-left:1rem;
+    margin-right:1rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+    h2, .discover{
+        text-shadow: $text-shadow;
+        font-family: 'Luxi-italic','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+        margin:2rem 0;
+        font-size: 2rem;
+        color: $mutedGrey;
+        border-bottom: 1px solid #ffd500;
+        text-align: center;
+    }
+    .featured{
+        font-family: "Nickelodeon";
+        font-size: 5rem;
+        text-align: center;
+        color: $grey;
+        .fa-arrow-up{
+            font-size: 2rem;
+            margin: 1rem;
+        }
+        .grid-1, .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 1em;
+            align-items: center;
+            justify-items: center;
+            padding: 1rem;
+        }
+
+    }
+    h2.h2{
+        margin-top: 1rem;
+        text-align: center;
+        font-style: italic;
+        color: $mutedGrey;
+    }
+    .video-container{
+        video{
+            width: 100%;
+        }
+    }
+    
+}

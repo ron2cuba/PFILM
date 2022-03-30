@@ -9,7 +9,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "node-sass --watch maquettes/scss/ --source-map-root -o maquettes"
+    "watch": "node-sass --watch PFILM_02_codesource/scss/ --source-map-root -o PFILM_02_codesource"
   },
   "repository": {
     "type": "git",

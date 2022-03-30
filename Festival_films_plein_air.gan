@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="festival des Films de Plein Air" company="" webLink="http://" view-date="2022-03-17" view-index="0" gantt-divider-location="503" resource-divider-location="327" version="3.2.3221" locale="fr_FR">
+<?xml version="1.0" encoding="UTF-8"?><project name="festival des Films de Plein Air" company="" webLink="http://" view-date="2022-03-17" view-index="0" gantt-divider-location="503" resource-divider-location="327" version="3.2.3230" locale="fr_FR">
     <description>
         <![CDATA[Jennifer Edwards est l'organisatrice du festival des Films de Plein Air. Elle ambitionne de sélectionner et de projeter des films d'auteur en plein air du 5 au 8 août au parc Monceau à Paris.]]>
     </description>
     <view zooming-state="default:0" id="gantt-chart">
         <field id="tpd3" name="Nom" width="206" order="0"/>
-        <field id="tpd4" name="Date de début" width="54" order="1"/>
-        <field id="tpd5" name="Date de fin" width="30" order="2"/>
+        <field id="tpd4" name="Date de début" width="130" order="1"/>
+        <field id="tpd5" name="Date de fin" width="10" order="2"/>
         <field id="tpd6" name="Durée" width="30" order="3"/>
         <field id="tpd8" name="Responsable" width="182" order="4"/>
         <option id="filter.completedTasks" value="false"/>
